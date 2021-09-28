@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+class myaary{
+    public :
+    int totalsize;
+    int usedsize;
+    int *ptr;
+
+};
+void createarray( class myaary* a, int  tsize, int usize){
+    (*a).totalsize=tsize;
+     (*a).usedsize=usize;
+     (*a).ptr= new int;
+}
+void show( class myaary *a){
+    for (int i = 0; i < a-> usedsize; i++)
+    {
+        /* code */cout<<(a->ptr)[i];
+       
+    }
+}
+
+void set( class myaary *a){
+    
+
+    for (int i = 0; i < a-> usedsize; i++)
+    {
+        int n;
+       cin>>n;
+        (a->ptr)[i] =n;
+
+    }
+    
+}
+
+int main(){
+myaary marks;
+createarray(&marks,5,3);
+set(&marks);
+show(&marks);
+
+return 0;
+}
