@@ -1,0 +1,22 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String args[])throws IOException
+	{
+	   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       int t = Integer.parseInt(br.readLine());
+       for(int i=0;i<t;i++)
+       {
+           for(int j=0;j<t-i;j++)
+           System.out.print(" ");
+           for(int k=0;k<=i;k++)
+           System.out.print("*");
+           System.out.println();
+       }// your code goes here
+	}
+};
