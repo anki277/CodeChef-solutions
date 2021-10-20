@@ -1,0 +1,18 @@
+#include <stdio.h> 
+
+int main() {
+	// Read the number of test cases.
+	int T,ans=0;
+	scanf("%d", &T);
+	while (T--) {
+		// Read the input a, b
+		int a, b;
+		scanf("%d %d", &a, &b);
+
+		// Compute the ans.
+		// Complete this line.
+	    ans = a%b;
+		printf("%d\n", ans);
+	}
+return 0;
+}
