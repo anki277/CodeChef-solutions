@@ -1,0 +1,28 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String args[])throws IOException
+	{
+	   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	  int t=Integer.parseInt(br.readLine());
+	  while(t-->0)
+	  {
+	      int sum=0,s=0;
+	    int a[]=new int[6];
+	    String st[]=br.readLine().split(" ");
+	    for(int i=0;i<6;i++)
+	    a[i]=Integer.parseInt(st[i]);
+	    sum+=a[0]+a[1]+a[2];
+	    s+=a[3]+a[4]+a[5];
+	    if(sum>s)
+	    System.out.println("1");
+	    else
+	    System.out.println("2");
+	  }// your code goes here
+	}
+};
