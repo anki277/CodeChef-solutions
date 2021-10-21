@@ -1,0 +1,25 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.io.*;
+import java.math.BigInteger;
+
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String args[])throws IOException
+	{
+	   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	   int t=Integer.parseInt(br.readLine());
+	   while(t-->0)
+	   {
+	   BigInteger fact=new BigInteger("1");
+	   int a=Integer.parseInt(br.readLine());
+	   for(int i=2;i<=a;i++)
+	   fact=fact.multiply(BigInteger.valueOf(i));
+	   System.out.println(fact);
+	   }
+	   // your code goes here
+	}
+};
