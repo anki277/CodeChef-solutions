@@ -1,0 +1,36 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String args[])throws IOException
+	{
+	   BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	   int t=Integer.parseInt(br.readLine());
+	   while(t-->0)
+	   {
+	       String s[]=br.readLine().split(" ");
+	       int a[]=new int[2];
+	       for(int i=0;i<2;i++)
+	       a[i]=Integer.parseInt(s[i]);
+	       String st[]=br.readLine().split(" ");
+	       int b[]=new int[a[0]];
+	       for(int i=0;i<a[0];i++)
+	       {
+	       b[i]=Integer.parseInt(st[i]);
+	       if(a[1]-b[i]>=0)
+	       {
+	           System.out.print("1");
+	           a[1]=a[1]-b[i];
+	       }
+	       else
+	       System.out.print("0");
+	       }
+	       System.out.println();
+	       
+	   }
+	}
+};
